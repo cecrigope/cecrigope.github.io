@@ -1,0 +1,24 @@
+/* ===================================================================
+ * fonts.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+/*
+ * Fugaz One
+================================================================================ */
+@font-face {
+  font-family: "fugazone";
+  src: url("../fonts/fugazone/fugazone.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * Monda
+================================================================================ */
+@font-face {
+  font-family: "monda";
+  src: url("../fonts/monda/monda.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
