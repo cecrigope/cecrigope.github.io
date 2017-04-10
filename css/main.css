@@ -1790,8 +1790,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 	max-width: 1050px;
 }
 #about span {
-	color: #ff5533;
+	color: #07617d;
 	font-size: 2.5rem;
+}
+#about spansecret{
+	color: #2E383F;
+}
+#about spansecret:hover {
+	color: #FFFFFF;
+	background: #ff5533
 }
 #about p{
 	font-size: 2.5rem;
