@@ -751,7 +751,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
 	background: #ff5533;
-	color: #000000;
+	color: #ffffff;
 }
 
 .button.button-primary,
@@ -1147,9 +1147,9 @@ input::-moz-focus-inner {
 	margin-bottom: 1.2rem;
 }
 .section-intro .lead {
-	font-family: "fugazone";
-	font-size: 1.8;
-	line-height: 1.833;
+	font-family: "monda";
+	font-size: 2.5rem;
+	line-height: 1.5;
 }
 .section-intro.with-bottom-sep {
 	padding-bottom: 4.2rem;
@@ -1490,9 +1490,9 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
 	header .header-logo a {
-		width: 51px;
-		height: 24px;
-		background-size: 51px 24px;
+		width: 30px;
+		height: 36px;
+		background-size: 30px 36px;
 	}
 }
 @media only screen and (max-width: 400px) {
@@ -1559,7 +1559,7 @@ header .header-logo a {
 .home-content-tablecell h1 {
 	font-family: "fugazone";
 	font-size: 9rem;
-	line-height: 1.133;
+	line-height: 1.25;
 	color: #EDFF0B;
 	text-transform: uppercase;
 	letter-spacing: .3rem;
