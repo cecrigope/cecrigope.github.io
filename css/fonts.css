@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------- */
 
 /*
- * Fugaz One
+ * fugaz one
 ================================================================================ */
 @font-face {
   font-family: "fugazone";
@@ -14,11 +14,51 @@
 }
 
 /*
- * Monda
+ * monda
 ================================================================================ */
 @font-face {
   font-family: "monda";
   src: url("../fonts/monda/monda.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * condiment
+================================================================================ */
+@font-face {
+  font-family: "condiment";
+  src: url("../fonts/condiment/condiment.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * miniver
+================================================================================ */
+@font-face {
+  font-family: "miniver";
+  src: url("../fonts/miniver/miniver.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * mrdafoe
+================================================================================ */
+@font-face {
+  font-family: "mrdafoe";
+  src: url("../fonts/mrdafoe/mrdafoe.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*
+ * yellowtail
+================================================================================ */
+@font-face {
+  font-family: "yellowtail";
+  src: url("../fonts/yellowtail/yellowtail.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
