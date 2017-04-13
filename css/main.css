@@ -1791,23 +1791,24 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about span {
 	color: #07617d;
-	font-size: 2.5rem;
+	font-size: 2.5vmax;
 }
 #about spansecret{
 	color: #2E383F;
+	font-size: 2.5vmax;
 }
 #about spansecret:hover {
 	color: #FFFFFF;
 	background: #ff5533
 }
 #about p{
-	font-size: 2.5rem;
+	font-size: 2.5vmax;
 	line-height: 1.5;
 	color: #2e383f;
 }
 #about h3 {
 	font-family: "fugazone";
-	font-size: 5rem;
+	font-size: 5vmax;
 	line-height: 1.0;
 	color: #07617d;
 	text-transform: uppercase;
@@ -1935,7 +1936,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
 #services .section-intro h3 {
-	font-size: 5vw;
+	font-size: 2.5vmax;
 	color: #EDFF0B;
 }
 #services .section-intro h1 {
@@ -1944,8 +1945,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #services .section-intro .lead {
 	font-family:"monda";
 	color: rgba(242, 242, 242, 1);
-	font-size: 2.5rem;
-	line-height: 3rem;
+	font-size: 2.5vmax;
+	line-height: 3vmax;
 }
 #services .services-content {
 	text-align: center;
