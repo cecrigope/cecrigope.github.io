@@ -1935,7 +1935,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
 #services .section-intro h3 {
-	font-size: 5rem;
+	font-size: 5vw;
 	color: #EDFF0B;
 }
 #services .section-intro h1 {
