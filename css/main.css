@@ -1,5 +1,13 @@
+h1 {
+  font-family: 'Fugaz One';
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 200;
+}
+
 #home {
-  background-image: url("../assets/background.jpg");
+  background-image: url("../assets/home.jpg");
   background-position: 50% 50%;
   background-size: cover;
   height: 100%;
@@ -7,15 +15,12 @@
   text-align: center;
 }
 
-#home h1, h2, a{
+#home h2, a{
   font-family: 'Fugaz One';
 }
 
 #home h1 {
   color: #ECFE0B;
-  text-transform: uppercase;
-  font-size: 120px;
-  font-weight: 200;
 }
 
 #home h2 {
@@ -26,24 +31,20 @@
 }
 
 #home a {
-  color: white;
-  text-transform: uppercase;
   font-size: 36px;
   font-weight: 200;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-#home .resume.link {
+  color: white;
+  text-transform: uppercase;
   background-color: rgba(0,0,0,0);
   width: 380px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-#home .resume.link:hover {
-  background-color: #ff5533;
+#home a:hover {
+  background-color: #FF5533;
 }
-
 
 #about {
   background-color: white;
@@ -53,29 +54,75 @@
 }
 
 #about h1 {
-  font-family: 'Fugaz One';
-  text-align: center;
-  text-transform: uppercase;
   color: #06566E;
-  font-size: 5vmax;
-  font-weight: 200;
 }
 
 #about p {
   font-family: 'Monda';
-  text-align: center;
+  font-size: 32px;
   color: #262B2F;
-  font-size: 2vmax;
+  text-align: center;
+  line-height: 1.5;
 }
 
-#about image {
-  border-color: blue;
-  padding-top: 100px;
-  padding-left: 100px;
+#about .profile {
+  padding-top: 50px;
+  width: 30%;
+  height: 30%;
+}
+
+#experience {
+  background-image: url("../assets/experience.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 125%;
+  width: 100%;
+}
+
+#experience h1 {
+  color: #ECFE0B;
+}
+
+#experience h2 {
+  font-family: 'Monda';
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+#experience a {
+  font-family: 'Monda';
+  background-color: white;
+  color: #06566E;
+  width: 100%;
+}
+
+#experience a:hover {
+  color: white;
+  background-color: #FF5533;
+}
+
+#experience h3 {
+  font-family: 'Monda';
+  font-size: 32px;
+  color: white;
+  line-height: 1.25;
+}
+
+#experience ul {
+  font-family: 'Monda';
+  font-size: 24px;
+  color: white;
+  line-height: 1.15;
+}
+
+#experience li {
+  margin-bottom: 15px;
 }
 
 #involvement {
-  background-image: url("../assets/background3.jpg");
+  background-image: url("../assets/involvement.jpg");
   background-position: 50% 50%;
   background-size: cover;
   height: 100%;
@@ -83,10 +130,5 @@
 }
 
 #involvement h1 {
-  font-family: 'Fugaz One';
-  text-align: center;
-  text-transform: uppercase;
   color: #ECFE0B;
-  font-size: 5vmax;
-  font-weight: 200;
 }
