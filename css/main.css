@@ -1,27 +1,92 @@
-body {
+#home {
   background-image: url("../assets/background.jpg");
+  background-position: 50% 50%;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
-h1, h2 {
+#home h1, h2, a{
+  font-family: 'Fugaz One';
+}
+
+#home h1 {
+  color: #ECFE0B;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 200;
+}
+
+#home h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+#home a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 200;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#home .resume.link {
+  background-color: rgba(0,0,0,0);
+  width: 380px;
+}
+
+#home .resume.link:hover {
+  background-color: #ff5533;
+}
+
+
+#about {
+  background-color: white;
+  background-size: cover;
+  height: 125%;
+  width: 100%;
+}
+
+#about h1 {
   font-family: 'Fugaz One';
   text-align: center;
   text-transform: uppercase;
-}
-
-h1 {
-  color: #ECFE0B;
+  color: #06566E;
   font-size: 5vmax;
   font-weight: 200;
 }
 
-h2 {
-  color: white;
+#about p {
+  font-family: 'Monda';
+  text-align: center;
+  color: #262B2F;
   font-size: 2vmax;
-  font-weight: 100;
 }
 
-.resume.button {
-  color: white;
-  font-family: 'Monda';
+#about image {
+  border-color: blue;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+#involvement {
+  background-image: url("../assets/background3.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#involvement h1 {
+  font-family: 'Fugaz One';
+  text-align: center;
+  text-transform: uppercase;
+  color: #ECFE0B;
+  font-size: 5vmax;
+  font-weight: 200;
 }
