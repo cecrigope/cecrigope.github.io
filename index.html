@@ -7,9 +7,10 @@
 
     <title>César González</title>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <script src="semantic/dist/semantic.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Fugaz%20One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet'>
@@ -20,19 +21,27 @@
 
   <body>
     <section id="home">
-      <div class="ui container">
-        <div class="row">
-          <h2>Hello, nice to meet you! My name is</h2>
-          <h1>CÉSAR GONZÁLEZ</h1>
-          <a target="_blank" href="cecrigope.github.io/resume.pdf">View my Résumé</a>
-        </div>
+      <div class="ui center aligned middle aligned grid container">
+        <centercomplete>
+          <div class="row">
+            <div class="column">
+              <h2>Hello, nice to meet you! My name is</h2>
+              <h1>César González P.</h1>
+              <a target="_blank" href="cecrigope.github.io/resume.pdf">View my Resume</a>
+            </div>
+          </div>
+        </centercomplete>
       </div>
     </section>
 
     <section id="about">
-      <h1>About Me</h1>
-      <div class="ui container">
-        <div class="ui center aligned grid">
+      <div class="ui center aligned grid container">
+        <centercomplete>
+          <div class="row">
+            <div class="column">
+              <h1>About Me</h1>
+            </div>
+          </div>
           <div class="row">
             <div class="column">
               <p>Born in Barranquilla, Colombia on December 24, 1995. Computer Science major and Business Administration minor at the University of Florida. Former Director of Logistics for UF Hackathoners, and former External Social Director for UF Association for Computing Machinery. <br>Did I forget to mention that I'm an avid soccer fan?</p>
@@ -40,33 +49,33 @@
           </div>
           <div class="row">
             <div class="column">
-              <center>
-                <img class="profile" src="assets/profile.jpg" alt="Profile Picture">
-              </center>
+              <img class="profile" src="assets/profile.jpg" alt="Profile Picture">
             </div>
           </div>
-        </div>
+        <centercomplete/>
       </div>
     </section>
 
     <section id="experience">
-      <h1>Experience</h1>
-      <div class="ui container">
-        <div class="ui grid">
+      <centercomplete>
+        <div class="ui center aligned grid container">
+          <div class="row">
+            <div class="column">
+              <h1>Experience</h1>
+            </div>
+          </div>
           <div class="two column row">
             <div class="column">
               <img src="assets/automagic.png" alt="Automagic Logo">
             </div>
             <div class="column">
-              <div>
-                <h2><a class="place" target="_blank" href="https://www.automagictechnologies.com/">Automagic Technologies</a></h2>
-                <ul>
-                  <h3>Full Stack Developer</h3>
-                  <li>Created backend endpoints to modify employee personal information.</li>
-                  <li>Refactored shop administration view - employee and service management.</li>
-                  <li>Developed Employee and Service components.</li>
-                </ul>
-              </div>
+              <h2><a target="_blank" href="https://www.automagictechnologies.com/">Automagic Tech</a></h2>
+              <h3>Full Stack Developer</h3>
+              <ul>
+                <li>Created backend endpoints to modify employee personal information.</li>
+                <li>Refactored shop administration view - employee and service management.</li>
+                <li>Developed Employee and Service components.</li>
+              </ul>
             </div>
           </div>
           <div class="three column row">
@@ -79,43 +88,54 @@
             <div class="column">
               <img src="assets/placeholder.png" alt="Placeholder">
             </div>
-
           </div>
         </div>
-      </div>
+      <centercomplete/>
     </section>
 
     <section id="involvement">
-      <h1>Involvement</h1>
-      <div class="ui container">
-        <div class="ui two column centered grid">
+      <centercomplete>
+        <div class="ui center aligned grid container">
           <div class="row">
             <div class="column">
-              <center>
-                <!-- <h2>UF Association for Computing Machinery</h2> -->
-                <img src="assets/acm.png" alt="UF ACM Logo">
-              </center>
-            </div>
-            <div class="column">
-              <center>
-                <!-- <h2>UF Hackathoners</h2> -->
-                <img src="assets/ufh.png" alt="UF Hackathoners Logo">
-              </center>
+              <h1>Involvement</h1>
             </div>
           </div>
-
-          <div class="row">
+          <div class="two column row">
             <div class="column">
-              <h2>UF Association for Computing Machinery</h2>
+              <img src="assets/acm.png" alt="Placeholder">
             </div>
             <div class="column">
-              <h2>UF Hackathoners</h2>
+              <img src="assets/ufh.png" alt="Placeholder">
             </div>
           </div>
-
+          <div class="two column row">
+            <div class="column">
+              <h2>
+                UF Association for Computing Machinery
+              </h2>
+            </div>
+            <div class="column">
+              <h2>
+                UF Hackathoners
+              </h2>
+            </div>
+          </div>
+          <div class="two column row">
+            <div class="column">
+              <p>
+                Organized social and professional events to connect students to fellow peers, the local community and industry. Coordinated events along with other UF engineering organizations to create opportunities for the campus engineering community to come together. Worked along UF’s computer science department to revise and improve the university’s computer science and engineering curriculum.
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                Organized and coordinated opportunities for UF students to participate in hackathons across the US. Helped establish a hacker culture at UF which supports the university’s computer science and engineering community. Collaborated along with computer science departments and communities at different universities to coordinate travel to and from hackathons. Worked along with UF’s computer science and engineering community to help raise UF from #25 to #2 in North America for hackathon participation in one season, per Major League Hacking.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      </centercomplete>
     </section>
-
+    
   </body>
 </html>
