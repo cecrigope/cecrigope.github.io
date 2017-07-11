@@ -10,6 +10,7 @@ h1 {
   background-image: url("../assets/home.jpg");
   background-position: 50% 50%;
   background-size: cover;
+  vertical-align: middle;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -24,6 +25,7 @@ h1 {
 }
 
 #home h2 {
+  padding-top: 35%;
   color: white;
   text-transform: uppercase;
   font-size: 48px;
@@ -49,11 +51,12 @@ h1 {
 #about {
   background-color: white;
   background-size: cover;
-  height: 125%;
+  height: 100%;
   width: 100%;
 }
 
 #about h1 {
+  padding-top: 5%;
   color: #06566E;
 }
 
@@ -67,19 +70,20 @@ h1 {
 
 #about .profile {
   padding-top: 50px;
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
 }
 
 #experience {
   background-image: url("../assets/experience.jpg");
   background-position: 50% 50%;
   background-size: cover;
-  height: 125%;
+  height: 100%;
   width: 100%;
 }
 
 #experience h1 {
+  padding-top: 7%;
   color: #ECFE0B;
 }
 
@@ -130,5 +134,15 @@ h1 {
 }
 
 #involvement h1 {
-  color: #ECFE0B;
+  color: #FF5533;
+}
+
+#involvement h2 {
+  font-family: 'Monda';
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
 }
