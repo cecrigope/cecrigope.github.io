@@ -11,6 +11,8 @@ centercomplete {
   left: 50%;
 }
 
+
+
 #home {
   background-image: url("../assets/home.jpg");
   background-position: 50% 50%;
@@ -45,7 +47,7 @@ centercomplete {
   text-transform: uppercase;
   background-color: rgba(0,0,0,0);
   width: 380px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 10px;
   padding-right: 30px;
   padding-left: 30px;
@@ -53,6 +55,13 @@ centercomplete {
 
 #home a:hover {
   background-color: #FF5533;
+}
+
+#home .gonzalez {
+  width: 5%;
+  position: absolute;
+  top: 35px;
+  right: 35px;
 }
 
 #about {
@@ -105,16 +114,11 @@ centercomplete {
   font-weight: 700;
   line-height: 1.5;
   text-align: center;
-}
-
-#experience a {
-  font-family: 'Monda';
   background-color: white;
   color: #06566E;
-  width: 100%;
 }
 
-#experience a:hover {
+#experience h2:hover {
   color: white;
   background-color: #FF5533;
 }
@@ -139,7 +143,7 @@ centercomplete {
 }
 
 #experience .logo {
-  width: 100%;
+  width: 90%;
 }
 
 
@@ -171,4 +175,5 @@ centercomplete {
   font-family: 'Monda';
   font-size: 24px;
   color: white;
+  line-height: 1.5;
 }
