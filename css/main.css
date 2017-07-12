@@ -11,8 +11,6 @@ centercomplete {
   left: 50%;
 }
 
-
-
 #home {
   background-image: url("../assets/home.jpg");
   background-position: 50% 50%;
@@ -58,10 +56,10 @@ centercomplete {
 }
 
 #home .gonzalez {
-  width: 5%;
+  width: 3%;
   position: absolute;
-  top: 35px;
-  right: 35px;
+  top: 40px;
+  right: 40px;
 }
 
 #about {
