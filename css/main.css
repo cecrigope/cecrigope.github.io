@@ -1,7 +1,7 @@
 h1 {
   font-family: 'Fugaz One';
   text-transform: uppercase;
-  font-size: 96px;
+  font-size: 6rem;
   font-weight: 200;
 }
 
@@ -15,7 +15,7 @@ centercomplete {
   background-image: url("../assets/home.jpg");
   background-position: 50% 50%;
   background-size: cover;
-  height: 105%;
+  height: 100%;
   width: 100%;
 }
 
@@ -25,21 +25,21 @@ centercomplete {
 
 #home h2, a {
   font-family: 'Fugaz One';
+  font-size: 3rem;
 }
 
 #home h1 {
   color: #ECFE0B;
+  font-size: 7rem;
 }
 
 #home h2 {
   color: white;
   text-transform: uppercase;
-  font-size: 48px;
   font-weight: 100;
 }
 
 #home a {
-  font-size: 36px;
   font-weight: 200;
   color: white;
   text-transform: uppercase;
@@ -56,10 +56,9 @@ centercomplete {
 }
 
 #home .gonzalez {
-  width: 3%;
-  position: absolute;
-  top: 40px;
-  right: 40px;
+  width: 5rem;
+  padding-top: 25px;
+  padding-left: 25px;
 }
 
 #about {
@@ -79,14 +78,14 @@ centercomplete {
 
 #about p {
   font-family: 'Monda';
-  font-size: 32px;
+  font-size: 2rem;
   color: #262B2F;
   line-height: 1.5;
 }
 
 #about .profile {
-  padding-top: 50px;
-  width: 40%;
+  /*padding-top: 50px;*/
+  width: 350px;
 }
 
 #experience {
@@ -107,7 +106,7 @@ centercomplete {
 
 #experience h2 {
   font-family: 'Monda';
-  font-size: 44px;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.5;
@@ -128,20 +127,24 @@ centercomplete {
 }
 #experience h3 {
   font-family: 'Monda';
-  font-size: 40px;
+  font-size: 2.5rem;
   color: white;
   line-height: 1.25;
   text-align: center;
 }
 
 #experience li {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: left;
   margin-bottom: 15px;
 }
 
 #experience .logo {
   width: 90%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 
@@ -163,7 +166,7 @@ centercomplete {
 
 #involvement h2 {
   font-family: 'Monda';
-  font-size: 36px;
+  font-size: 2.5rem;
   color: white;
   font-weight: 700;
   line-height: 1.25;
@@ -171,7 +174,7 @@ centercomplete {
 
 #involvement p {
   font-family: 'Monda';
-  font-size: 24px;
+  font-size: 1.5rem;
   color: white;
   line-height: 1.5;
 }
