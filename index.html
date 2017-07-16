@@ -7,6 +7,7 @@
 
     <title>César González</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <script src="https://use.fontawesome.com/4209b0050f.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
@@ -21,45 +22,86 @@
   </head>
 
   <body>
-    <div class="ui sidebar">
-      <a class="item">
-        Home
-      </a>
-    </div>
-    <div class="ui sidebar">
-      <a class="item">
-        About Me
-      </a>
-    </div>
-    <div class="ui sidebar">
-      <a class="item">
-        Experience
-      </a>
-    </div>
-    <div class="ui sidebar">
-      <a class="item">
-        Involvement
-      </a>
-    </div>
 
     <section id="home">
       <img class="gonzalez" src="assets/logo.png" alt="Gonzalez">
+
+      <div class="directory">
+        <a href="#home">
+          <span>
+            Home
+          </span>
+        </a>
+        <a>
+          <span>
+            /
+          </span>
+        </a>
+        <a href="#about">
+          <span>
+            About Me
+          </span>
+        </a>
+        <a>
+          <span>
+            /
+          </span>
+        </a>
+        <a href="#experience">
+          <span>
+            Experience
+          </span>
+        </a>
+        <a>
+          <span>
+            /
+          </span>
+        </a>
+        <a href="#involvement">
+          <span>
+            Involvement
+          </span>
+        </a>
+      </div>
+
       <centercomplete>
-        <div class="ui center aligned middle aligned grid container">
+        <div class="ui center aligned grid">
           <div class="row">
             <div class="column">
               <h2>Hello, nice to meet you! My name is</h2>
               <h1>César González</h1>
-              <a target="_blank" href="cecrigope.github.io/resume.pdf">View my Résumé</a>
+              <a target="_blank" href="cecrigope.github.io/resume.pdf">
+                <p>View my Résumé</p>
+              </a>
             </div>
           </div>
         </div>
       </centercomplete>
+
+      <div class="social">
+        <div class="ui list">
+          <div class="item">
+            <a target="_blank" href="https://www.facebook.com/cecrigope">
+              <i class="fa fa-facebook-f fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="item">
+            <a target="_blank" href="https://www.linkedin.com/in/cecrigope">
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="item">
+            <a target="_blank" href="https://www.github.com/cecrigope">
+              <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="about">
       <centercomplete>
-        <div class="ui center aligned grid container">
+        <div class="ui center aligned grid">
           <div class="row">
             <div class="column">
               <h1>About Me</h1>
@@ -81,7 +123,7 @@
 
     <section id="experience">
       <centercomplete>
-        <div class="ui stackable center aligned grid container">
+        <div class="ui stackable center aligned grid">
           <div class="row">
             <div class="column">
               <h1>Experience</h1>
@@ -107,7 +149,7 @@
 
     <section id="involvement">
       <centercomplete>
-        <div class="ui stackable center aligned grid container">
+        <div class="ui stackable center aligned grid">
           <div class="row">
             <div class="column">
               <h1>Involvement</h1>
@@ -148,5 +190,6 @@
         </div>
       </centercomplete>
     </section>
+
   </body>
 </html>

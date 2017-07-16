@@ -9,6 +9,7 @@ centercomplete {
   transform: translate(-50%, -50%);
   position: absolute;
   left: 50%;
+  width: 90%;
 }
 
 #home {
@@ -17,48 +18,81 @@ centercomplete {
   background-size: cover;
   height: 100%;
   width: 100%;
+	background-attachment: fixed;
 }
 
 #home centercomplete {
   top: 50%;
 }
 
-#home h2, a {
-  font-family: 'Fugaz One';
-  font-size: 3rem;
-}
-
 #home h1 {
   color: #ECFE0B;
   font-size: 7rem;
+  margin-bottom: -10px;
+  margin-top: 20px;
 }
 
-#home h2 {
+#home h2, p {
+  font-family: 'Fugaz One';
+  font-size: 3rem;
   color: white;
   text-transform: uppercase;
   font-weight: 100;
 }
 
-#home a {
-  font-weight: 200;
-  color: white;
-  text-transform: uppercase;
-  background-color: rgba(0,0,0,0);
-  width: 380px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
+#home p {
+  width: 400px;
+  padding-top: 10px;
+  display: table-cell;
+  vertical-align: center;
 }
 
-#home a:hover {
+#home p:hover {
   background-color: #FF5533;
 }
 
+#home .social {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+#home i {
+  font-size: 2.5rem;
+  color: white;
+  padding-top: 15px;
+}
+
+#home i:hover {
+  color: #ECFE0B;
+}
+
 #home .gonzalez {
-  width: 5rem;
+  width: 5.5rem;
   padding-top: 25px;
   padding-left: 25px;
+}
+
+#home .directory {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 25px;
+  padding-right: 25px;
+}
+
+#home span {
+  font-family: "Monda";
+  color: white;
+  font-size: 1.25rem;
+}
+
+#home span:hover {
+  color: #ECFE0B;
 }
 
 #about {
@@ -79,12 +113,12 @@ centercomplete {
 #about p {
   font-family: 'Monda';
   font-size: 2rem;
-  color: #262B2F;
+  color: #353535;
   line-height: 1.5;
+  text-transform: none;
 }
 
 #about .profile {
-  /*padding-top: 50px;*/
   width: 350px;
 }
 
@@ -106,13 +140,14 @@ centercomplete {
 
 #experience h2 {
   font-family: 'Monda';
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.5;
-  text-align: center;
-  background-color: white;
   color: #06566E;
+  background-color: white;
+  width: 100%;
+  text-align: center;
 }
 
 #experience h2:hover {
@@ -120,17 +155,17 @@ centercomplete {
   background-color: #FF5533;
 }
 
-#experience ul {
-  font-family: 'Monda';
-  color: white;
-  line-height: 1.15;
-}
 #experience h3 {
   font-family: 'Monda';
   font-size: 2.5rem;
   color: white;
   line-height: 1.25;
-  text-align: center;
+}
+
+#experience ul {
+  font-family: 'Monda';
+  color: white;
+  line-height: 1.15;
 }
 
 #experience li {
@@ -177,4 +212,5 @@ centercomplete {
   font-size: 1.5rem;
   color: white;
   line-height: 1.5;
+  text-transform: none;
 }
