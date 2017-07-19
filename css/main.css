@@ -13,7 +13,7 @@ centercomplete {
 }
 
 #home {
-  background-image: url("../assets/home.jpg");
+  background: url("../assets/home.jpg");
   background-position: 50% 50%;
   background-size: cover;
   height: 100%;
@@ -76,35 +76,16 @@ centercomplete {
   padding-left: 25px;
 }
 
-#home .directory {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding-top: 25px;
-  padding-right: 25px;
-}
-
-#home span {
-  font-family: "Monda";
-  color: white;
-  font-size: 1.25rem;
-}
-
-#home span:hover {
-  color: #ECFE0B;
-}
-
 #about {
   background-color: white;
   background-size: cover;
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-attachment: fixed;
 }
 
 #about centercomplete {
-  top: 150%;
+  top: 160%;
 }
 
 #about h1 {
@@ -123,17 +104,42 @@ centercomplete {
   width: 350px;
 }
 
+#education {
+  background-image: url("../assets/education.jpg");
+  background-position: center 80%;
+  background-size: cover;
+  height: 120%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+#education centercomplete {
+  top: 280%;
+}
+
+#education h1 {
+  color: #FF5533;
+}
+
+#education p {
+  font-family: 'Monda';
+  font-size: 2rem;
+  color: #ffffff;
+  line-height: 1.5;
+  text-transform: none;
+}
+
 #experience {
   background-image: url("../assets/experience.jpg");
-  background-position: 50% 50%;
+  background-position: center 0%;
   background-size: cover;
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-attachment: fixed;
 }
 
 #experience centercomplete {
-  top: 250%;
+  top: 400%;
 }
 
 #experience h1 {
@@ -189,13 +195,13 @@ centercomplete {
   background-image: url("../assets/involvement.jpg");
   background-position: 50% 50%;
   background-size: cover;
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-attachment: fixed;
 }
 
 #involvement centercomplete {
-  top: 350%;
+  top: 520%;
 }
 
 #involvement h1 {
