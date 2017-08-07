@@ -7,6 +7,8 @@
   width: 90%;
 }
 
+/********************************************************************/
+
 #home {
   background: url("../assets/home.jpg");
   background-position: 50% 50%;
@@ -15,31 +17,52 @@
 }
 
 #home h1 {
-  /*font-family: 'Fugaz One';*/
+  font-family: 'Fugaz One';
   /*font-size: 9vw;*/
   color: #ECFE0B;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 #home h2, p {
-  /*font-family: 'Fugaz One';*/
+  font-family: 'Fugaz One';
   /*font-size: 3vw;*/
   color: white;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 #home p {
   display: table-cell;
   vertical-align: center;
+  padding: 10px 10px 10px 10px;
 }
 
 #home p:hover {
-  /*background-color: #FF5533;*/
+  background-color: #FF5533;
 }
+
+#home a {
+  text-decoration: none;
+}
+
+/********************************************************************/
 
 #about {
   text-align: center;
 }
+
+#about h1 {
+  font-family: 'Fugaz One';
+  color: #06566E;
+  text-transform: uppercase;
+}
+
+#about p {
+  font-family: 'Monda';
+  color: #454545;
+  text-transform: none;
+}
+
+/********************************************************************/
 
 #education {
   background: url("../assets/education.jpg");
@@ -48,12 +71,39 @@
   text-align: center;
 }
 
+#education h1 {
+  font-family: 'Fugaz One';
+  color: #FF5533;
+  text-transform: uppercase;
+}
+
+/********************************************************************/
+
 #experience {
   background: url("../assets/experience.jpg");
-  background-position: 50% 50%;
+  background-position: center 0%;
   background-size: cover;
   text-align: center;
 }
+
+#experience h1 {
+  font-family: 'Fugaz One';
+  color: #ECFE0B;
+  text-transform: uppercase;
+}
+
+#experience h2 {
+  font-family: 'Monda';
+  color: #06566E;
+  background-color: white;
+}
+
+#experience h2:hover {
+  color: white;
+  background-color: #FF5533;
+}
+
+/********************************************************************/
 
 #involvement {
   background: url("../assets/involvement.jpg");
