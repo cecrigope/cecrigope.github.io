@@ -1,90 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=800" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
-  <title>César González</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-  <script src="https://use.fontawesome.com/4209b0050f.js"></script>
-
-  <!-- BOOTSTRAP -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
-  <!-- GOOGLE FONTS -->
-  <link href='https://fonts.googleapis.com/css?family=Fugaz%20One' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet'>
-
-  <!-- CSS FILE -->
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-  <!-- HOME -->
   <section id="home">
-    <div class="container-fluid">
+    <div class="container">
       <h1>Hello, nice to meet you! My name is</h1>
       <h1 class="display-1">Cesar Gonzalez</h1>
       <a target="_blank" href="/resume.pdf">
-        <h2>View Resume</h2>
+        <h1 class="button">View Résumé</h1>
       </a>
     </div>
   </section>
 
-  <!-- ABOUT ME -->
   <section id="about">
     <div class="container">
-      <h1 class="display-3">About Me</h1>
-      <p>
-        Born in Barranquilla, Colombia on December 24, 1995. Computer Science major and Business Administration minor at the University of Florida. Former Director of Logistics for UF Hackathoners, and former External Social Director for UF Association for Computing
-        Machinery. Did I forget to mention that I'm an avid soccer fan?
-      </p>
+      <h1 class="display-1">About Me</h1>
+      <p>Born in Barranquilla, Colombia on December 24, 1995. Computer Science major and Business Administration minor at the University of Florida. Former Director of Logistics for UF Hackathoners, and former External Social Director for UF Association
+        for Computing Machinery. Did I forget to mention that I'm an avid soccer fan?</p>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
   <section id="experience">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col">
-          <h1 class="display-3">Experience</h1>
+        <div class="col-sm-12">
+          <h1 class="display-1">Experience</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-lg-6">
           <img src="assets/automagic.png" class="img-fluid">
         </div>
-        <div class="col">
+        <div class="col-lg-6">
           <h2>Automagic Technologies</h2>
           <h3>Full Stack Engineering Intern</h3>
           <ul>
-            <li>
-              Participated in an Agile workplace and performed daily stand-up meetings.
-            </li>
-            <li>
-              Worked on Back-End routes for account creation and personal information modification.
-            </li>
-            <li>
-              Redesigned and remodeled Front-End portion for managing employees and services into components for easy integration throughout web application.
-            </li>
-            <li>
-              Revised shop employee and shop customer interaction through remodeling the repair order creation process.
-            </li>
-            <li>
-              Incorporated user interface modifications to enhance user experience and mobile
-            </li>
-            use.
+            <li>Participated in an Agile workplace and performed daily stand-up meetings.</li>
+            <li>Worked on Back-End routes for account creation and personal information modification.</li>
+            <li>Redesigned and remodeled Front-End portion for managing employees and services into components for easy integration throughout web application.</li>
+            <li>Revised shop employee and shop customer interaction through remodeling the repair order creation process.</li>
+            <li>Incorporated user interface modifications to enhance user experience and mobile use.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="involvement">
+    <div class="container-fluid">
+      <div class="row add-padding">
+        <div class="col-sm-12">
+          <h1 class="display-1">Involvement</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>UF Hackathoners</h2>
+        </div>
+      </div>
+      <div class="row add-padding">
+        <div class="col-lg-2">
+          <img src="assets/ufh.png">
+        </div>
+        <div class="col-lg-10">
+          <ul>
+            <li>Organized and coordinated opportunities for UF students to participate in hackathons across the US.</li>
+            <li>Helped establish a hacker culture at UF which supports the university’s computer science and engineering community. </li>
+            <li>Collaborated along with computer science departments and communities at different universities to coordinate travel to and from hackathons.</li>
+            <li>Worked along with UF’s computer science and engineering community to help raise UF from #25 to #2 in North America for hackathon participation in one season, per Major League Hacking.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Florida Hackers</h2>
+        </div>
+      </div>
+      <div class="row add-padding">
+        <div class="col-lg-2">
+          <img src="assets/flh.jpg">
+        </div>
+        <div class="col-lg-10">
+          <ul>
+            <li>Participated in an Agile workplace and performed daily stand-up meetings.</li>
+            <li>Worked on Back-End routes for account creation and personal information modification.</li>
+            <li>Redesigned and remodeled Front-End portion for managing employees and services into components for easy integration throughout web application.</li>
+            <li>Revised shop employee and shop customer interaction through remodeling the repair order creation process.</li>
+            <li>Incorporated user interface modifications to enhance user experience and mobile use.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>UF Association for Computing Engineering</h2>
+        </div>
+      </div>
+      <div class="row add-padding">
+        <div class="col-lg-2">
+          <img src="assets/acm.png">
+        </div>
+        <div class="col-lg-10">
+          <ul>
+            <li>Participated in an Agile workplace and performed daily stand-up meetings.</li>
+            <li>Worked on Back-End routes for account creation and personal information modification.</li>
+            <li>Redesigned and remodeled Front-End portion for managing employees and services into components for easy integration throughout web application.</li>
+            <li>Revised shop employee and shop customer interaction through remodeling the repair order creation process.</li>
+            <li>Incorporated user interface modifications to enhance user experience and mobile use.</li>
           </ul>
         </div>
       </div>
     </div>
 
   </section>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 
 </html>

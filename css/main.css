@@ -4,41 +4,41 @@
   background: url("../assets/home.jpg");
   background-size: cover;
   background-position: 50% 100%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   align-items: center;
   display: flex;
   color: white;
-  font-family: "Fugaz One";
+  font-family: 'Fugaz One';
   text-transform: uppercase;
 }
 
 #home .display-1 {
+  font-family: 'Fugaz One';
   color: #ECFE0B;
 }
 
 #home a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
-#home h2 {
+#home .button {
   display: table-cell;
-  padding: 15px 20px 10px 20px;
+  padding: 20px 10px 10px 10px;
 }
 
-#home h2:hover {
+#home .button:hover {
   background-color: #FF5533;
 }
+
 
 /********** ABOUT ME **********/
 
 #about {
   background: white;
-  background-size: cover;
-  background-position: 50% 100%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   align-items: center;
@@ -47,15 +47,16 @@
   font-family: "Fugaz One";
 }
 
-#about .display-3 {
+#about .display-1 {
   color: #06566E;
   text-transform: uppercase;
 }
 
 #about p {
   font-family: "Monda";
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
+
 
 /********** EXPERIENCE **********/
 
@@ -63,7 +64,7 @@
   background: url(../assets/experience.jpg);
   background-size: cover;
   background-position: 50% 0%;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   text-align: left;
   align-items: center;
@@ -72,7 +73,11 @@
   font-family: "Monda";
 }
 
-#experience .display-3 {
+#experience .container-fluid {
+  width: 90vw;
+}
+
+#experience .display-1 {
   font-family: "Fugaz One";
   color: #ECFE0B;
   text-transform: uppercase;
@@ -80,11 +85,77 @@
 }
 
 #experience h2 {
+  padding: 10px 10px 10px 10px;
+  display: table-cell;
+  background-color: #FF5533;
+  text-align: center;
+  font-size: 3rem;
   text-transform: uppercase;
+}
+
+#experience h3 {
+  font-size: 2rem;
+}
+
+#experience li {
+  font-size: 1.5rem;
 }
 
 #experience img {
   position: relative;
   top: 50%;
+  margin-bottom: 100px;
   transform: translateY(-50%);
+}
+
+
+/********** INVOLVEMENT **********/
+
+#involvement {
+  background: url(../assets/involvement.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  width: 100vw;
+  min-height: 120vh;
+  max-height: 300vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-family: "Fugaz One";
+  float: left;
+}
+
+#involvement .container-fluid {
+  width: 85vw;
+}
+
+#involvement .display-1 {
+  color: #FF5533;
+  text-transform: uppercase;
+}
+
+#involvement h2 {
+  font-family: "Monda";
+  text-transform: uppercase;
+}
+
+#involvement img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 250px;
+  max-height: 220px;
+  margin: auto;
+  align-items: center;
+}
+
+#involvement li {
+  font-family: "Monda";
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+#involvement .add-padding {
+  padding-bottom: 50px;
 }
