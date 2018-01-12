@@ -1,162 +1,65 @@
-/********** HOME **********/
-
-#home {
-  background: url("../assets/home.jpg");
-  background-size: cover;
-  background-position: 50% 100%;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  color: white;
-  font-family: 'Fugaz One';
-  text-transform: uppercase;
+body {
+    font-family: 'Roboto';
+    color: rgb(82, 82, 82);
 }
 
-#home .display-1 {
-  font-family: 'Fugaz One';
-  color: #ECFE0B;
+.parallax-home, .parallax-about-me, .parallax-experience {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 
-#home a {
-  color: white;
-  text-decoration: none;
+.parallax-home {
+    background-image: url("../assets/home.jpg");
+    background-position: bottom;
+    height: 100vh;
 }
 
-#home .button {
-  display: table-cell;
-  padding: 20px 10px 10px 10px;
+.parallax-about-me {
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#home .button:hover {
-  background-color: #FF5533;
+.parallax-experience {
+    background-image: url("../assets/experience.jpg");
+    background-position: top;
 }
 
-
-/********** ABOUT ME **********/
-
-#about {
-  background: white;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  color: #454545;
-  font-family: "Fugaz One";
+.title-home {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
 }
 
-#about .display-1 {
-  color: #06566E;
-  text-transform: uppercase;
+.imp {
+    color: rgb(236, 254, 11);
+    font-weight: 700;
 }
 
-#about p {
-  font-family: "Monda";
-  font-size: 2rem;
+.btn-resume {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
 }
 
-
-/********** EXPERIENCE **********/
-
-#experience {
-  background: url(../assets/experience.jpg);
-  background-size: cover;
-  background-position: 50% 0%;
-  width: 100%;
-  height: 100%;
-  min-height: 120vh;
-  text-align: left;
-  align-items: center;
-  display: flex;
-  color: white;
-  font-family: "Monda";
+.btn-resume:hover {
+    color: white;
+    border-color: rgb(255, 85, 51);
+    background-color: rgb(255, 85, 51);
 }
 
-#experience .container-fluid {
-  width: 90vw;
+.blue-filter {
+    background-color: rgba(0, 75, 125, 0.67);
+    height: 100vh;
 }
 
-#experience .display-1 {
-  font-family: "Fugaz One";
-  color: #ECFE0B;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-#experience h2 {
-  padding: 10px 10px 10px 10px;
-  display: table-cell;
-  background-color: #FF5533;
-  text-align: center;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-#experience h3 {
-  font-size: 2rem;
-}
-
-#experience li {
-  font-size: 1.5rem;
-}
-
-#experience img {
-  position: relative;
-  top: 50%;
-  margin-bottom: 100px;
-  transform: translateY(-50%);
-}
-
-
-/********** INVOLVEMENT **********/
-
-#involvement {
-  background: url(../assets/involvement.jpg);
-  background-size: cover;
-  background-position: 50% 0%;
-  width: 100%;
-  height: 140%;
-  min-height: 140vh;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  color: white;
-  font-family: "Fugaz One";
-  float: left;
-}
-
-#involvement .container-fluid {
-  width: 85vw;
-}
-
-#involvement .display-1 {
-  color: #FF5533;
-  text-transform: uppercase;
-}
-
-#involvement h2 {
-  font-family: "Monda";
-  text-transform: uppercase;
-}
-
-#involvement img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 250px;
-  max-height: 220px;
-  margin: auto;
-  align-items: center;
-}
-
-#involvement li {
-  font-family: "Monda";
-  font-size: 1.5rem;
-  text-align: left;
-}
-
-#involvement .add-padding {
-  padding-bottom: 50px;
+h1 {
+    font-weight: 700;
 }
