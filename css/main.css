@@ -1,9 +1,13 @@
 body {
     font-family: 'Roboto';
-    color: rgb(82, 82, 82);
+    color: rgb(85, 85, 85);
 }
 
-.parallax-home, .parallax-about-me, .parallax-experience {
+h1 {
+    font-weight: 700;
+}
+
+.parallax-home, .parallax-about-me, .parallax-experience, .parallax-involvement{
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -20,7 +24,7 @@ body {
 }
 
 .parallax-about-me {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -28,15 +32,23 @@ body {
 .parallax-experience {
     background-image: url("../assets/experience.jpg");
     background-position: top;
+    color: white;
+}
+
+.parallax-involvement {
+    background-color: white;
+    background-position: top;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .title-home {
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: 300;
 }
 
 .imp {
-    color: rgb(236, 254, 11);
+    color: rgb(235, 255, 10);
     font-weight: 700;
 }
 
@@ -51,8 +63,18 @@ body {
 
 .btn-resume:hover {
     color: white;
-    border-color: rgb(255, 85, 51);
-    background-color: rgb(255, 85, 51);
+    border-color: rgb(255, 85, 50);
+    background-color: rgb(255, 85, 50);
+}
+
+.orange-filter {
+    background-color: rgba(255, 85, 50, 0.67);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blue-text {
+    color: rgb(255, 85, 50);
 }
 
 .blue-filter {
@@ -60,6 +82,10 @@ body {
     height: 100vh;
 }
 
-h1 {
-    font-weight: 700;
+.blue-text {
+    color: rgb(0, 75, 125);
+}
+
+.yellow-text {
+    color: rgb(235, 255, 10);
 }
