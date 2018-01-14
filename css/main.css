@@ -4,7 +4,8 @@ body {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 900;
+    /* text-transform: uppercase; */
 }
 
 .parallax-home, .parallax-about-me, .parallax-experience, .parallax-involvement{
@@ -24,7 +25,7 @@ h1 {
 }
 
 .parallax-about-me {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -32,18 +33,18 @@ h1 {
 .parallax-experience {
     background-image: url("../assets/experience.jpg");
     background-position: top;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .parallax-involvement {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     background-position: top;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .title-home {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 300;
 }
 
@@ -53,16 +54,17 @@ h1 {
 }
 
 .btn-resume {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 30px;
     border: 2px;
     border-style: solid;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
+    margin-top: 15px;
 }
 
 .btn-resume:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     border-color: rgb(255, 85, 50);
     background-color: rgb(255, 85, 50);
 }
@@ -74,7 +76,7 @@ h1 {
 }
 
 .btn-secondary:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     border-color: rgb(255, 85, 50);
     background-color: rgb(255, 85, 50);
 }
@@ -90,14 +92,19 @@ h1 {
 }
 
 .blue-filter {
-    background-color: rgba(0, 75, 125, 0.67);
+    background-color: rgba(11, 100, 143, 0.67);
     height: 100vh;
 }
 
 .blue-text {
-    color: rgb(0, 75, 125);
+    color: rgb(11, 100, 143);
 }
 
-.yellow-text {
-    color: rgb(235, 255, 10);
+.img-pad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-title {
+    text-transform: uppercase;
 }
