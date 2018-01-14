@@ -103,6 +103,10 @@ a:hover {
     background-color: rgb(255, 85, 50);
 }
 
+.btn-secondary:active {
+    border-color: green;
+}
+
 /*** FILTERS ***/
 
 .blue-filter {
