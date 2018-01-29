@@ -15,7 +15,8 @@ a, a:hover {
 }
 
 a:hover {
-  color: rgb(255, 85, 50);
+  /* color: rgb(255, 85, 50); */
+  color: rgb(235, 255, 10);
 }
 
 /*** PARALLAX ***/
@@ -56,9 +57,8 @@ a:hover {
 }
 
 .parallax-contact-me {
-  background-color: rgb(45, 190, 96);
+  background-image: url("../assets/contact.jpg");
   color: rgb(255, 255, 255);
-  padding-top: 50px;
 }
 
 /*** HOME CUSTOM ***/
@@ -93,6 +93,8 @@ a:hover {
 
 .btn-secondary {
   color: rgb(126, 134, 142);
+  border: 2px;
+  border-style: solid;
   border-color: rgb(247, 247, 247);
   background-color: rgb(247, 247, 247);
 }
@@ -101,10 +103,6 @@ a:hover {
   color: rgb(255, 255, 255);
   border-color: rgb(255, 85, 50);
   background-color: rgb(255, 85, 50);
-}
-
-.btn-secondary:active {
-  border-color: green;
 }
 
 /*** FILTERS ***/
@@ -118,6 +116,11 @@ a:hover {
   background-color: rgba(255, 85, 50, 0.67);
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.green-filter {
+  background-color: rgba(45, 190, 96, 0.7);
+  padding-top: 50px;
 }
 
 /*** MISCELLANEOUS ***/
