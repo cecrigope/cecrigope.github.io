@@ -14,11 +14,6 @@ a, a:hover {
   text-decoration: none;
 }
 
-a:hover {
-  /* color: rgb(255, 85, 50); */
-  color: rgb(235, 255, 10);
-}
-
 /*** PARALLAX ***/
 
 .parallax-home, .parallax-about-me, .parallax-experience, .parallax-involvement, .parallax-contact-me {
