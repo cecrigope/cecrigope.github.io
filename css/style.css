@@ -1,3 +1,5 @@
+/* UNIVERSAL */
+
 @font-face {
   font-family: "HelloDenverRegular";
   src: url(fonts/hellodenverdisplayregular_v1.6.ttf);
@@ -10,8 +12,21 @@
 
 body {
   font-family: "Roboto";
+  color: rgb(45, 45, 45);
 }
 
+h1 {
+  font-family: "HelloDenverRegular";
+  margin-bottom: 25px;
+}
+
+.jumbotron-home, .jumbotron-experience {
+  border-radius: 0px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/* NAVBAR */
 .bg-dark, .navbar-dark {
   background-color: rgb(0, 60, 90) !important;
 }
@@ -22,36 +37,62 @@ body {
   margin-bottom: 0px;
 }
 
+/* HOME PANEL */
+
+.jumbotron-home {
+  background-image: url("../assets/home-pattern.png");
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .home-title {
-  font-family: "HelloDenverRegular";
-  /* font-size: 5.0em; */
   color: rgb(235, 255, 10);
 }
 
 .home-subtitle {
-  font-family: "HelloDenverRegular";
-  /* font-size: 3.0em; */
   color: rgb(255, 255, 255);
-}
-
-.jumbotron {
-  background-image: url("../assets/home-pattern.png");
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border-radius: 0px;
+  margin-bottom: 0px;
 }
 
 .btn-resume {
+  background-color: rgb(0, 77, 115);
   color: rgb(255, 255, 255);
-  /* font-weight: 500; */
+  border-color: rgb(255, 255, 255);
   border: 2px;
   border-style: solid;
-  border-color: rgb(255, 255, 255);
   margin-top: 10px;
 }
 
 .btn-resume:hover {
+  background-color: rgb(235, 70, 20);
   color: rgb(255, 255, 255);
   border-color: rgb(235, 70, 20);
-  background-color: rgb(235, 70, 20);
+}
+
+/* ABOUT ME */
+
+#about-me {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-title {
+  color: rgb(235, 70, 20);
+}
+
+/* EXPERIENCE */
+
+.jumbotron-experience {
+  /* background-image: url("../assets/experience-pattern.png"); */
+  background-color: rgb(29, 185, 84);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.experience-title {
+  color: rgb(255, 255, 255);
+}
+
+.white-text {
+  color: rgb(255, 255, 255);
 }
