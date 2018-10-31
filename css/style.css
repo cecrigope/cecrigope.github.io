@@ -1,3 +1,13 @@
+body {
+  font-family: 'Lato';
+  color: rgb(50, 50, 50);
+}
+
+h1, h2 {
+  font-family: 'Montserrat';
+  font-weight: bold !important;
+}
+
 :root {
   --jumbotron-padding-y: 3rem;
 }
@@ -50,7 +60,7 @@ footer p {
   color: rgb(255, 255, 255);
 }
 
-.education, .experience, .projects, .involvement {
+.education, .experience, .projects, .involvement, .contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -59,6 +69,116 @@ footer p {
   background-color: rgb(244, 244, 244);
 }
 
+.experience {
+  background-color: rgba(255, 95, 0, 0.75);
+}
+
 .projects {
   background-color: rgb(244, 244, 244);
+}
+
+.involvement {
+  background-color: rgba(51, 156, 49, 0.75);
+}
+
+.contact {
+  background-color: rgb(52, 58, 64);
+  color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.no-margin {
+  margin: 0px 0px 0px 0px;
+}
+
+.profile-container {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(50, 50, 50);
+  border-radius: 5px;
+}
+
+.profile-container:hover .overlay {
+  opacity: 1;
+}
+
+.profile-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profile-header {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.white {
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+hr {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.img-fluid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.parallax-home, .parallax-experience, .parallax-involvement {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+/* .parallax-home {
+  background-image: url("../assets/home.jpg");
+  background-position: bottom;
+  height: 100vh;
+} */
+
+.parallax-experience {
+  background-image: url("../img/experience.jpg");
+  background-position: top;
+}
+
+.parallax-involvement {
+  background-image: url("../img/involvement.jpg");
+  background-position: top;
 }
