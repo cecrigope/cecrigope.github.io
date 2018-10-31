@@ -1,151 +1,64 @@
-/* UNIVERSAL */
-@font-face {
-  font-family: "HelloDenverRegular";
-  src: url(fonts/hellodenverdisplayregular_v1.6.ttf);
+:root {
+  --jumbotron-padding-y: 3rem;
 }
 
-@font-face {
-  font-family: "HelloDenverBold";
-  src: url(fonts/hellodenverdisplaybold_v1.6.ttf);
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-body {
-  font-family: "Roboto";
-  color: rgb(45, 45, 45);
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
 }
 
-h1 {
-  font-family: "HelloDenverRegular";
-  margin-bottom: 25px;
+.jumbotron p:last-child {
+  margin-bottom: 0;
 }
 
-a, a:hover {
-  color: white;
-  text-decoration: none;
+.jumbotron-heading {
+  font-weight: 300;
 }
 
-.jumbotron-home, .jumbotron-experience, .jumbotron-involvement {
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.home-bg {
+  background-color: rgb(59, 70, 82);
   border-radius: 0px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
 }
 
-/* NAVBAR */
-.bg-dark, .navbar-dark {
-  background-color: rgb(0, 60, 90) !important;
-}
-
-.logo {
-  font-family: "HelloDenverRegular";
-  color: rgb(235, 255, 10);
-  margin-bottom: 0px;
-}
-
-/* HOME PANEL */
-.jumbotron-home {
-  background-image: url("../assets/home-pattern.png");
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.home-title {
-  color: rgb(235, 255, 10);
-}
-
-.home-subtitle {
-  color: rgb(255, 255, 255);
-  margin-bottom: 0px;
-}
-
-.btn-resume {
-  background-color: rgb(0, 77, 115);
-  color: rgb(255, 255, 255);
-  border-color: rgb(255, 255, 255);
-  border: 2px;
-  border-style: solid;
-  margin-top: 10px;
-}
-
-.btn-resume:hover {
-  background-color: rgb(235, 70, 20);
-  color: rgb(255, 255, 255);
-  border-color: rgb(235, 70, 20);
-}
-
-/* ABOUT ME */
-#about-me {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.about-title {
-  color: rgb(235, 70, 20);
-}
-
-/* EXPERIENCE */
-.experience-title {
-  color: rgb(235, 255, 10);
-}
-
-.jumbotron-experience {
-  background-image: url("../assets/experience.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.green-overlay {
-  background-color: rgba(29, 185, 84, 0.7);
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.white-text {
+.home-title, .home-subtitle {
   color: rgb(255, 255, 255);
 }
 
-/* PROJECTS */
-#projects {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.education, .experience, .projects, .involvement {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.projects-title {
-  color: rgb(0, 77, 115);
+.education {
+  background-color: rgb(244, 244, 244);
 }
 
-/* INVOLVEMENT */
-.involvement-title {
-  color: rgb(255, 255, 255);
-}
-
-.jumbotron-involvement {
-  background-image: url("../assets/involvement.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.orange-overlay {
-  background-color: rgba(235, 70, 20, 0.6);
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.white-text {
-  color: rgb(255, 255, 255);
-}
-
-/* ABOUT ME */
-#contact-me {
-  /* background-color: rgb(0, 60, 90); */
-  background-image: url("../assets/home-pattern.png");
-  color: rgb(255, 255, 255);
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.contact-me-title {
-  color: rgb(235, 255, 10);
-  margin-bottom: 0px;
+.projects {
+  background-color: rgb(244, 244, 244);
 }
