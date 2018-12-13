@@ -1,6 +1,11 @@
+:root {
+  --primary-color:  rgb(255, 132, 0);
+  --primary-color-shade: rgb(204, 105, 0);
+}
+
 body {
   font-family: 'Lato';
-  color: rgb(50, 50, 50);
+  color: rgb(43, 61, 79);
 }
 
 h1, h2 {
@@ -16,7 +21,7 @@ h1, h2 {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 
 @media (min-width: 768px) {
@@ -34,10 +39,6 @@ h1, h2 {
   font-weight: 300;
 }
 
-.jumbotron .container {
-  max-width: 40rem;
-}
-
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -52,17 +53,31 @@ footer p {
 }
 
 .home-bg {
-  background-color: rgb(59, 70, 82);
+  background-color: rgb(43, 61, 79);
   border-radius: 0px;
 }
 
-.home-title, .home-subtitle {
+.home-title {
+  font-family: "Montserrat";
+  color: var(--primary-color) !important;
+  font-weight: bold !important;
+}
+
+.name-title {
+  /* font-size: 4rem; */
+}
+
+.home-subtitle {
   color: rgb(255, 255, 255);
 }
 
-.education, .experience, .projects, .involvement, .contact {
+.about, .education, .experience, .projects, .involvement, .contact {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.about {
+  background-color: rgb(230, 230, 230);
 }
 
 .education {
@@ -70,7 +85,7 @@ footer p {
 }
 
 .experience {
-  background-color: rgba(255, 95, 0, 0.75);
+  background-color: rgba(255, 95, 0, 0.65);
 }
 
 .projects {
@@ -78,11 +93,11 @@ footer p {
 }
 
 .involvement {
-  background-color: rgba(51, 156, 49, 0.75);
+  background-color: rgba(51, 156, 49, 0.65);
 }
 
 .contact {
-  background-color: rgb(52, 58, 64);
+  background-color: rgb(43, 61, 79);
   color: rgb(255, 255, 255);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -115,7 +130,7 @@ footer p {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(43, 61, 79);
   border-radius: 5px;
 }
 
@@ -124,7 +139,7 @@ footer p {
 }
 
 .profile-text {
-  color: white;
+  color: rgb(255, 255, 255);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -140,7 +155,7 @@ footer p {
 }
 
 .white {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin-top: 5px;
   margin-bottom: 5px;
   padding-top: 0px;
@@ -181,4 +196,24 @@ hr {
 .parallax-involvement {
   background-image: url("../img/involvement.jpg");
   background-position: top;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+  font-family: "Lato";
+  font-weight: Bold;
+}
+
+.btn-resume {
+  background-color: var(--primary-color) !important;
+  color: rgb(255, 255, 255);
+}
+
+.btn-resume:hover {
+  background-color: var(--primary-color-shade) !important;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-dark, .bg-dark{
+  background-color: rgb(38, 54, 71) !important;
 }
