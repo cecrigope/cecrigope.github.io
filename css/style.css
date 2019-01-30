@@ -1,151 +1,244 @@
-/* UNIVERSAL */
-@font-face {
-  font-family: "HelloDenverRegular";
-  src: url(fonts/hellodenverdisplayregular_v1.6.ttf);
-}
-
-@font-face {
-  font-family: "HelloDenverBold";
-  src: url(fonts/hellodenverdisplaybold_v1.6.ttf);
+:root {
+  --primary-color:  rgb(30, 215, 96);
+  --primary-color-shade: rgb(20, 135, 61);
 }
 
 body {
-  font-family: "Roboto";
-  color: rgb(45, 45, 45);
+  font-family: 'Lato';
+  color: rgb(43, 61, 79);
 }
 
-h1 {
-  font-family: "HelloDenverRegular";
-  margin-bottom: 25px;
+h1, h2 {
+  font-family: 'Montserrat';
+  font-weight: bold !important;
 }
 
-a, a:hover {
-  color: white;
-  text-decoration: none;
+:root {
+  --jumbotron-padding-y: 3rem;
 }
 
-.jumbotron-home, .jumbotron-experience, .jumbotron-involvement {
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.home-bg {
+  background-color: rgb(43, 61, 79);
   border-radius: 0px;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
-
-/* NAVBAR */
-.bg-dark, .navbar-dark {
-  background-color: rgb(0, 60, 90) !important;
-}
-
-.logo {
-  font-family: "HelloDenverRegular";
-  color: rgb(235, 255, 10);
-  margin-bottom: 0px;
-}
-
-/* HOME PANEL */
-.jumbotron-home {
-  background-image: url("../assets/home-pattern.png");
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .home-title {
-  color: rgb(235, 255, 10);
+  font-family: "Montserrat";
+  color: var(--primary-color) !important;
+  font-weight: bold !important;
+}
+
+.name-title {
+  /* font-size: 4rem; */
 }
 
 .home-subtitle {
   color: rgb(255, 255, 255);
-  margin-bottom: 0px;
 }
 
-.btn-resume {
-  background-color: rgb(0, 77, 115);
-  color: rgb(255, 255, 255);
-  border-color: rgb(255, 255, 255);
-  border: 2px;
-  border-style: solid;
-  margin-top: 10px;
+.about, .education, .experience, .projects, .involvement, .contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.btn-resume:hover {
-  background-color: rgb(235, 70, 20);
-  color: rgb(255, 255, 255);
-  border-color: rgb(235, 70, 20);
+.about {
+  background-color: rgb(230, 230, 230);
 }
 
-/* ABOUT ME */
-#about-me {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.education {
+  background-color: rgb(244, 244, 244);
 }
 
-.about-title {
-  color: rgb(235, 70, 20);
+.experience {
+  background-color: rgba(255, 95, 0, 0.65);
 }
 
-/* EXPERIENCE */
-.experience-title {
-  color: rgb(235, 255, 10);
+.projects {
+  background-color: rgb(244, 244, 244);
 }
 
-.jumbotron-experience {
-  background-image: url("../assets/experience.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+.involvement {
+  background-color: rgba(51, 156, 49, 0.65);
 }
 
-.green-overlay {
-  background-color: rgba(29, 185, 84, 0.7);
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.white-text {
-  color: rgb(255, 255, 255);
-}
-
-/* PROJECTS */
-#projects {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.projects-title {
-  color: rgb(0, 77, 115);
-}
-
-/* INVOLVEMENT */
-.involvement-title {
-  color: rgb(255, 255, 255);
-}
-
-.jumbotron-involvement {
-  background-image: url("../assets/involvement.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.orange-overlay {
-  background-color: rgba(235, 70, 20, 0.6);
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.white-text {
-  color: rgb(255, 255, 255);
-}
-
-/* ABOUT ME */
-#contact-me {
-  /* background-color: rgb(0, 60, 90); */
-  background-image: url("../assets/home-pattern.png");
+.contact {
+  background-color: rgb(43, 61, 79);
   color: rgb(255, 255, 255);
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.contact-me-title {
-  color: rgb(235, 255, 10);
-  margin-bottom: 0px;
+.no-margin {
+  margin: 0px 0px 0px 0px;
+}
+
+.profile-container {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(43, 61, 79);
+  border-radius: 5px;
+}
+
+.profile-container:hover .overlay {
+  opacity: 1;
+}
+
+.profile-text {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.profile-header {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.white {
+  background-color: rgb(255, 255, 255);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+hr {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.img-fluid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.parallax-home, .parallax-experience, .parallax-involvement {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+
+/* .parallax-home {
+  background-image: url("../assets/home.jpg");
+  background-position: bottom;
+  height: 100vh;
+} */
+
+.parallax-experience {
+  background-image: url("../img/experience.jpg");
+  background-position: top;
+}
+
+.parallax-involvement {
+  background-image: url("../img/involvement.jpg");
+  background-position: top;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+  font-family: "Lato";
+  /* font-weight: Bold; */
+}
+
+.btn-resume {
+  background-color: var(--primary-color) !important;
+  color: rgb(255, 255, 255);
+}
+
+.btn-resume:hover {
+  background-color: var(--primary-color-shade) !important;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-dark, .bg-dark{
+  background-color: rgb(38, 54, 71) !important;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
 }
