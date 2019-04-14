@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en" ng-app="cecrigope" ng-controller="ctrl">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <title>César González</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <!-- AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <!-- Angular Media Queries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-media-queries/0.6.1/match-media.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/master.css">
+  <!-- Controller -->
+  <script src="./controller.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark module-border-wrap">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="./img/logo-yellow.png" height="40" class="d-inline-block align-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me"><span class="number">01.</span> About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience"><span class="number">02.</span> Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"><span class="number">03.</span> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#involvement"><span class="number">04.</span> Involvement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><span class="number">05.</span> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="container">
+      <div class="row" style="margin-bottom: 18px;">
+        <div class="col-12">
+          <h5 class="monospace subtitle">Hello! my name is</h5>
+          <h1 class="title" style="margin-bottom: 0px">César González.</h1>
+          <h2>I develop solutions.</h2>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 18px;">
+        <div class="col-12 col-sm-6">
+          <p>I'm a software developer based in Gainesville, FL specializing in full stack MEAN development and virtual reality. I'm passionate for all things tech related, and focus on developing high quality applications, while leading and
+            developing
+            future talent.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn btn-outline-primary" href="https://drive.google.com/file/d/1u594x6Pvov5b8naJ7pU9YXCt-SLq6WIx/view?usp=sharing" target="_blank">View My Résumé</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class=title><span class="number">01.</span> About Me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4" style="margin-bottom: 18px;" ng-if="isScreenSize('xs, sm')">
+          <img class="img-fluid" src="./img/profile.jpg">
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-12">
+              <p>Hello! I'm César, a software developer based in Gainesville, FL. I enjoy developing applications; everything from web applications to chatbots to virtual reality experiences. I believe in building software that changes the way that
+                organizations work and provide a unique perspective of how to harness the power of technology to improve day-to-day tasks.
+              </p>
+              <p>I'm a <span class="highlight">Computer Science</span> major at the <span class="highlight">University of Florida</span>, and will be graduating in <span class="highlight">December 2019</span>. My professional experience includes
+                working
+                as part of a small team in a local start-up to working as part of a large team in an multinational enterprise.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p>Some of my favorite languanges, frameworks, and tools:</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" ng-if="isScreenSize('md, lg')">
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>HTML & CSS</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>JavaScript</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>MongoDB</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Express.js</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Angular.js</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Node.js</li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4" ng-if="isScreenSize('md, lg')">
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>C++</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Unity</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Microsoft Bot Framework</li>
+              </ul>
+            </div>
+            <div class="col-12" ng-if="!isScreenSize('md, lg')">
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>HTML & CSS</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>JavaScript</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>MongoDB</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Express.js</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Angular.js</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Node.js</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>C++</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Unity</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Microsoft Bot Framework</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4" ng-if="isScreenSize('md, lg')">
+          <img class="img-fluid" src="./img/profile.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class=title><span class="number">02.</span> Experience</h2>
+        </div>
+      </div>
+      <div class="row" ng-if="isScreenSize('md, lg')">
+        <div class="col-2">
+          <div class="nav flex-column nav-pills" id="v-pills-tab">
+            <a class="nav-link active" data-toggle="pill" href="#v-pills-accenture" aria-selected="true">Accenture</a>
+            <a class="nav-link" data-toggle="pill" href="#v-pills-michelin" aria-selected="false">Michelin</a>
+            <a class="nav-link" data-toggle="pill" href="#v-pills-automagic" aria-selected="false">AutoMagic</a>
+          </div>
+        </div>
+        <div class="col-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-accenture">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="highlight">Accenture</h3>
+                    <h4>Technology Development Program Intern</h4>
+                    <p class="monospace">Starting June 2019</p>
+                    <p>More information coming soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-michelin">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="highlight">Michelin North America</h3>
+                    <h4>End User Experience Intern</h4>
+                    <p class="monospace">May 2018 - August 2018</p>
+                    <ul class="fa-ul">
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Created a Microsoft Teams chatbot to retrieve Knowledge Base articles via the Service Now API.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Built a chatbot to help users search through corporate acronyms and abbreviations to ease communication.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Developed a Microsoft Power App to expedite and guide new employees through the onboarding process.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Built site to familiarize users with tools and resources available within Michelin.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Automated information transfer to expedite the reimbursement process for Michelin employees.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-automagic">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="highlight">AutoMagic Technologies</h3>
+                    <h4>Full-Stack Software Developer Intern</h4>
+                    <p class="monospace">May 2017 - August 2017</p>
+                    <ul class="fa-ul">
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Worked on back-end routes for account creation and personal information modification.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Redesigned and remodeled front-end portion for managing employees and services into components for easy integration throughout web application.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Revised shop employee and shop customer interaction by remodeling the repair order creation process.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Incorporated user interface modifications to enhance user experience and mobile use.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Participated in an Agile workplace, including daily stand-up meetings, demonstrations, and retrospective meetings.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" ng-if="isScreenSize('xs, sm')">
+        <div class="col-12">
+          <ul class="nav nav-pills nav-tabs nav-justified" id="pills-tab">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-accenture" aria-selected="false">Accenture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-michelin" aria-selected="true">Michelin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-automagic" aria-selected="false">AutoMagic</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-accenture">
+              <div class="container">
+                <div class="row" style="margin-top: 12px;">
+                  <div class="col-12">
+                    <h3 class="highlight">Accenture</h3>
+                    <h4>Technology Development Program Intern</h4>
+                    <p class="monospace">Starting June 2019</p>
+                    <p>More information coming soon.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-michelin">
+              <div class="container">
+                <div class="row" style="margin-top: 12px;">
+                  <div class="col-12">
+                    <h3 class="highlight">Michelin North America</h3>
+                    <h4>End User Experience Intern</h4>
+                    <p class="monospace">May 2018 - August 2018</p>
+                    <ul class="fa-ul">
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Created a Microsoft Teams chatbot to retrieve Knowledge Base articles via the Service Now API.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Built a chatbot to help users search through corporate acronyms and abbreviations to ease communication.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Developed a Microsoft Power App to expedite and guide new employees through the onboarding process.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Built site to familiarize users with tools and resources available within Michelin.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Automated information transfer to expedite the reimbursement process for Michelin employees.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-automagic">
+              <div class="container">
+                <div class="row" style="margin-top: 12px;">
+                  <div class="col-12">
+                    <h3 class="highlight">AutoMagic Technologies</h3>
+                    <h4>Full-Stack Software Developer Intern</h4>
+                    <p class="monospace">May 2017 - August 2017</p>
+                    <ul class="fa-ul">
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Worked on back-end routes for account creation and personal information modification.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Redesigned and remodeled front-end portion for managing employees and services into components for easy integration throughout web application.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Revised shop employee and shop customer interaction by remodeling the repair order creation process.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Incorporated user interface modifications to enhance user experience and mobile use.</li>
+                      <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Participated in an Agile workplace, including daily stand-up meetings, demonstrations, and retrospective meetings.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class=title><span class="number">03.</span> Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h3 class="highlight">MemberSHPE UF</h3>
+              <h4>Project Manager</h4>
+              <p class="monospace">June 2018 - Present</p>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>A web application for the University of Florida's Society of Hispanic Professional Engineers. MemberSHPE UF helps the organization keep track of its attendance
+                  records and provides data analytics of the organization's members. It provides members with an accurate depiction of their points used for our reimbursement system for attending the national convention. It also gives members the
+                  opportunity to connect with industry professionals via our alumni network. MemberSHPE focuses on enhancing the experience of our members, alumni, and corporate sponsors.</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <img class="img-fluid" src="./img/membershpe.png" style="margin-bottom: 12px;">
+              <ul class="list-inline">
+                <li class="list-inline-item">HTML & CSS</li>
+                <li class="list-inline-item">JavaScript</li>
+                <li class="list-inline-item">MongoDB</li>
+                <li class="list-inline-item">Express.js</li>
+                <li class="list-inline-item">Angular.js</li>
+                <li class="list-inline-item">Node.js</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <h3 class="highlight">Human Eyes Design</h3>
+              <h4>Scrum Master</h4>
+              <p class="monospace">January 2018 - December 2018</p>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Developed a virtual reality application designed to aid architecture and interior design students, accounting for special needs users during the design process.</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Created a visual impairment filter for cataracts to simulate the experience of an individual with this medical condition.</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Aided fellow team members in developing other visual impairment filters – Diabetic Retinopathy, Glaucoma and Macular Degeneration.</li>
+                <li><span class="fa-li"><i class="fas fa-chevron-right"></i></span>Created controls and mechanisms to change and experience different severity levels for each of these conditions.</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <img class="img-fluid" src="./img/humaneyes.png" style="margin-bottom: 12px;">
+              <ul class="list-inline">
+                <li class="list-inline-item">Unity</li>
+                <li class="list-inline-item">Oculus SDK</li>
+                <li class="list-inline-item">C#</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="involvement">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class=title><span class="number">04.</span> Involvement</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="./img/shpe.png">
+            <div class="card-body">
+              <h3 class="highlight">Society of Hispanic Professional Engineer</h3>
+              <h4>Secretary</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="./img/acm.png">
+            <div class="card-body">
+              <h3 class="highlight">Association for Computing Machinery</h3>
+              <h4>Social External Director</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="./img/ufh.png">
+            <div class="card-body">
+              <h3 class="highlight">UF Hackathoners</h3>
+              <h4>Director of Logistics</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <div class="card">
+            <img class="card-img-top" src="./img/flh.png">
+            <div class="card-body">
+              <h3 class="highlight">Florida Hackers</h3>
+              <h4>University of Florida Representative</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class=title><span class="number">05.</span> Contact Me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
