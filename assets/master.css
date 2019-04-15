@@ -4,18 +4,13 @@
 }
 
 @font-face {
-  font-family: 'SF Bold';
-  src: url(../assets/fonts/SanFranciscoBold.ttf);
+  font-family: 'Open Sans Bold';
+  src: url(../assets/fonts/OpenSansBold.ttf);
 }
 
 @font-face {
   font-family: 'SF Regular';
   src: url(../assets/fonts/SanFranciscoRegular.ttf);
-}
-
-@font-face {
-  font-family: 'Trim Bold';
-  src: url(../assets/fonts/TrimBold.ttf);
 }
 
 body {
@@ -24,7 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'SF Bold';
+  font-family: 'Open Sans Bold';
   margin-bottom: 18px;
 }
 
@@ -50,7 +45,7 @@ h2 {
 }
 
 .title {
-  font-family: 'SF Bold';
+  font-family: 'Open Sans Bold';
   color: rgb(255, 255, 255);
 }
 
