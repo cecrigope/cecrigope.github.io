@@ -21,7 +21,6 @@
 body {
   color: rgb(153, 172, 185);
   font-family: 'SF Regular';
-  /* background-color: #003050; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -37,12 +36,17 @@ h2 {
   font-size: 2.5rem;
 }
 
-/* hr {
-  margin: 0px 0px 8px 8px;
-  border-color: rgb(255, 255, 255);
-} */
 .navbar-dark, .bg-dark {
   background-color: #02395D !important;
+}
+
+.underline {
+  border-style: solid;
+  border-width: 5px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-color: var(--primary);
 }
 
 .title {
@@ -279,12 +283,14 @@ a:hover {
   text-decoration: none;
 }
 
-.carousel-control-prev-icon {
-  color: var(--primary) !important;
-  /* background-color: var(--primary) !important; */
+.fadeInLeft {
+  -webkit-animation: fadeInLeft 0.5s both ease;
+  -moz-animation: fadeInLeft 0.5s both ease;
+  animation: fadeInLeft 0.5s both ease;
 }
 
-.carousel-control-next {
-  color: var(--primary) !important;
-  /* background-color: var(--primary) !important; */
+.fadeIn {
+  -webkit-animation: fadeIn 0.5s both ease;
+  -moz-animation: fadeIn 0.5s both ease;
+  animation: fadeIn 0.5s both ease;
 }
