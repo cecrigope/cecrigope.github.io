@@ -19,7 +19,7 @@
 }
 
 body {
-  color: rgb(136, 146, 176);
+  color: rgb(153, 172, 185);
   font-family: 'SF Regular';
   /* background-color: #003050; */
 }
@@ -41,7 +41,6 @@ h2 {
   margin: 0px 0px 8px 8px;
   border-color: rgb(255, 255, 255);
 } */
-
 .navbar-dark, .bg-dark {
   background-color: #02395D !important;
 }
@@ -124,13 +123,8 @@ h2 {
   padding: 64px 0px;
 }
 
-#miscellaneous {
-  background-color: #001828;
-  padding: 64px 0px;
-}
-
 #contact {
-  background-color: #001320;
+  background-color: #001828;
   padding: 64px 0px;
 }
 
@@ -170,7 +164,7 @@ h2 {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid rgb(136, 146, 176);
+  border-bottom: 1px solid rgb(153, 172, 185);
 }
 
 .nav-tabs .nav-item {
@@ -208,7 +202,7 @@ h2 {
 .nav-pills .nav-link {
   border-radius: 0px;
   font-family: 'Roboto Mono';
-  color: rgb(136, 146, 176);
+  color: rgb(153, 172, 185);
   border-image-slice: 1;
   border-width: 3px;
   border-top-width: 0px;
@@ -276,11 +270,21 @@ h2 {
 }
 
 a {
-  color: rgb(136, 146, 176);
+  color: rgb(153, 172, 185);
   text-decoration: none;
 }
 
 a:hover {
   color: var(--primary);
   text-decoration: none;
+}
+
+.carousel-control-prev-icon {
+  color: var(--primary) !important;
+  /* background-color: var(--primary) !important; */
+}
+
+.carousel-control-next {
+  color: var(--primary) !important;
+  /* background-color: var(--primary) !important; */
 }
