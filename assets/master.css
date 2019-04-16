@@ -268,6 +268,10 @@ h2 {
   margin-bottom: 18px;
 }
 
+.card-body {
+  padding: 12px;
+}
+
 a {
   color: rgb(153, 172, 185);
   text-decoration: none;
