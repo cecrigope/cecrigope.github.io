@@ -61,14 +61,14 @@
   </nav>
   <section id="home">
     <div class="container fadeInLeft">
-      <div class="row" style="margin-bottom: 12px;">
+      <div class="row">
         <div class="col-12">
-          <h5 class="monospace subtitle">Hello! my name is</h5>
-          <h1 class="title" style="margin-bottom: 0px">César González.</h1>
+          <h5 class="monospace highlight">Hello! my name is</h5>
+          <h1 class="title">César González.</h1>
           <h2>I develop solutions.</h2>
         </div>
       </div>
-      <div class="row" style="margin-bottom: 12px;">
+      <div class="row">
         <div class="col-12 col-sm-6">
           <p>I'm a software developer based in Gainesville, FL specializing in full stack MEAN development and virtual reality. I'm passionate for all things tech related, and focus on developing high quality applications, while leading and
             developing
@@ -79,7 +79,7 @@
       <div class="row">
         <div class="col-12">
           <a href="https://drive.google.com/file/d/1u594x6Pvov5b8naJ7pU9YXCt-SLq6WIx/view?usp=sharing" target="_blank">
-            <button type="button" class="btn btn-outline-primary">View My Résumé</button>
+            <button type="button" class="btn btn-primary btn-lg">View My Résumé</button>
           </a>
         </div>
       </div>
@@ -89,11 +89,11 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class=title><span class="number">01.</span> About Me</h2>
+          <h2 class=title-chapter><span class="number">01.</span> About Me</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-4" style="margin-bottom: 12px;" ng-if="isScreenSize('xs, sm')">
+        <div class="col-12 col-md-4" ng-if="isScreenSize('xs, sm')">
           <img class="img-fluid" src="./img/profile.jpg">
         </div>
         <div class="col-12 col-md-8">
@@ -154,7 +154,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class=title><span class="number">02.</span> Experience</h2>
+          <h2 class=title-chapter><span class="number">02.</span> Experience</h2>
         </div>
       </div>
       <div class="row" ng-if="isScreenSize('md, lg')">
@@ -234,7 +234,7 @@
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-accenture">
               <div class="container">
-                <div class="row" style="margin-top: 12px;">
+                <div class="row">
                   <div class="col-12">
                     <h3 class="highlight">Accenture</h3>
                     <h4>Technology Development Program Intern</h4>
@@ -246,7 +246,7 @@
             </div>
             <div class="tab-pane fade" id="pills-michelin">
               <div class="container">
-                <div class="row" style="margin-top: 12px;">
+                <div class="row">
                   <div class="col-12">
                     <h3 class="highlight">Michelin North America</h3>
                     <h4>End User Experience Intern</h4>
@@ -264,7 +264,7 @@
             </div>
             <div class="tab-pane fade" id="pills-automagic">
               <div class="container">
-                <div class="row" style="margin-top: 12px;">
+                <div class="row">
                   <div class="col-12">
                     <h3 class="highlight">AutoMagic Technologies</h3>
                     <h4>Full-Stack Software Developer Intern</h4>
@@ -289,7 +289,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class=title><span class="number">03.</span> Projects</h2>
+          <h2 class="title-chapter"><span class="number">03.</span> Projects</h2>
         </div>
       </div>
       <div class="row">
@@ -306,7 +306,7 @@
               </ul>
             </div>
             <div class="col-12 col-md-6">
-              <div id="carouselMembershpe" class="carousel slide carousel-fade" data-ride="carousel" style="margin-bottom: 12px;">
+              <div id="carouselMembershpe" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-interval="2000">
                     <img src="./img/membershpe1.png" class="d-block w-100">
@@ -338,7 +338,7 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <h3 class="highlight">Human Eyes Design</h3>
-              <p class="muted" style="margin-bottom: 0px;">Formerly called: OpticHaus</p>
+              <p class="muted">Formerly called: OpticHaus</p>
               <h4>Scrum Master</h4>
               <p class="monospace">January 2018 - December 2018</p>
               <ul class="fa-ul">
@@ -349,7 +349,7 @@
               </ul>
             </div>
             <div class="col-12 col-md-6">
-              <div id="carouselHumaneyes" class="carousel slide carousel-fade" data-ride="carousel" style="margin-bottom: 12px;">
+              <div id="carouselHumaneyes" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-interval="2000">
                     <img src="./img/humaneyes1.png" class="d-block w-100">
@@ -377,17 +377,46 @@
           </div>
         </div>
       </div>
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h3 class="title-chapter">Other Projects</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch" style="padding: 8px">
+          <div class="card card-project">
+            <div class="card-body">
+              <h3>Weathr</h3>
+              <p>A simple web application which tells you the weather information for a location, built with React.js and using the Open Weather Map API.</p>
+              <ul class="list-inline" style="margin-bottom:0px;">
+                <li class="list-inline-item">HTML & CSS</li>
+                <li class="list-inline-item">JavaScript</li>
+                <li class="list-inline-item">React.js</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <a href="http://weathr-react-app.herokuapp.com/" target="_blank">
+                <button type="button" class="btn btn-primary btn-block">Link</button>
+              </a>
+              <a href="https://github.com/cecrigope/weathr" target="_blank">
+                <button type="button" class="btn btn-primary btn-block">Github Repository</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section id="involvement">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class=title><span class="number">04.</span> Involvement</h2>
+          <h2 class=title-chapter><span class="number">04.</span> Involvement</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 0 6px;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 8px">
           <div class="card">
             <img class="card-img-top" src="./img/shpe.png">
             <div class="card-body">
@@ -399,7 +428,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 0 6px;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 8px">
           <div class="card">
             <img class="card-img-top" src="./img/acm.png">
             <div class="card-body">
@@ -411,7 +440,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 0 6px;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 8px">
           <div class="card">
             <img class="card-img-top" src="./img/ufh.png">
             <div class="card-body">
@@ -423,7 +452,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 0 6px;">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" style="padding: 8px">
           <div class="card">
             <img class="card-img-top" src="./img/flh.png">
             <div class="card-body">
@@ -442,7 +471,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class=title><span class="number">05.</span> Contact Me</h2>
+          <h2 class=title-chapter><span class="number">05.</span> Contact Me</h2>
         </div>
       </div>
       <div class="row">
