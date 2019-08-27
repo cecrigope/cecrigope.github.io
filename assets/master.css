@@ -73,6 +73,7 @@ hr {
   /* border: 1px solid; */
   /* border-color: var(--primary); */
   /* box-hover: 12px 12px var(--primary); */
+  margin-bottom: 16px;
 }
 
 .fa-li, .far, .fas, .la {
@@ -162,75 +163,90 @@ hr {
   box-hover: 0 0 0 .2rem var(--primary-hover);
 }
 
-.btn-block {
-  margin: 8px 0px;
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  border-radius: 0px !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+  text-decoration: none;
+  color: var(--primary);
+  border: 0px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: var(--primary);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-link:focus, .navbar-link:hover {
+  text-decoration: none;
+  /* color: red; */
+  border: 0px;
+  /* border-bottom: 3px;
+  border-style: solid;
+  border-color: red;
+  background-color: rgba(0, 0, 0, 0); */
+}
+
+.nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default
 }
 
 .nav-tabs {
-  border-bottom: 1px solid rgb(153, 172, 185);
+  border-bottom: 1px solid #dee2e6
 }
 
 .nav-tabs .nav-item {
-  margin-bottom: -1px;
+  margin-bottom: -1px
 }
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+  border-top-right-radius: .25rem
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #e9ecef #e9ecef #dee2e6
 }
 
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
   background-color: transparent;
-  border-color: transparent;
+  border-color: transparent
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #495057;
   background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
-
-.nav-tabs .dropdown-menu {
-  margin-top: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-color: #dee2e6 #dee2e6 #fff
 }
 
 .nav-pills .nav-link {
   border-radius: 0px;
-  font-family: 'Roboto Mono';
-  color: rgb(153, 172, 185);
-  border-image-slice: 1;
-  border-width: 3px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  border-style: solid;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color: #fff;
-  background-color: var(--primary);
+  color: #FFFFFF;
+  border: 0px;
+  border-bottom: 3px;
   border-color: var(--primary);
-  border-image-slice: 1;
-  border-width: 3px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
   border-style: solid;
+  background-color: var(--primary);
 }
 
 .nav-fill .nav-item {
-  -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  text-align: center
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-block {
+  margin: 8px 0px;
 }
 
 .carousel {
