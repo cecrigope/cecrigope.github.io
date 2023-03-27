@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html ng-app="cecrigope-ribs" ng-controller="ribs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chez César! Logan Square Restaurant</title>
+    <link rel="icon" type="image/png" href="./img/logo_ribs_red.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/ribs.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bg-rose-800 py-4">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1">
+            <div
+              class="flex items-center text-2xl mx-4 flex justify-self-center md:justify-self-start"
+            >
+              <img src="./img/logo_ribs.png" class="mr-3 h-12" />
+              <span
+                class="self-center text-3xl whitespace-nowrap text-5xl text-white main"
+              >
+                Chez César!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation bg-fixed bg-center bg-cover">
+      <div class="py-12">
+        <div class="container mx-auto text-white">
+          <div class="mx-4 md:mx-0">
+            <p
+              class="text-6xl md:text-7xl mb-8 main text-center"
+              id="welcomeMessage"
+            ></p>
+            <hr
+              class="w-48 h-0.5 mx-auto my-4 bg-white border-0 rounded md:my-10"
+            />
+            <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-8 gap-4">
+              <div
+                class="col-start-0 col-span-1 md:col-start-2 md:col-span-3 lg:col-start-4 lg:col-span-2"
+                id="infoQuestionnaire"
+              >
+                <p class="text-3xl md:text-5xl main text-center">
+                  Make your reservation
+                </p>
+                <p class="text-8xl md:text-8xl mb-8 main text-center">Today</p>
+                <div className="pt-4">
+                  <form>
+                    <div
+                      class="w-full text-lg text-center py-2 bg-red-500 mb-4 rounded-lg"
+                      id="warningMessage"
+                    ></div>
+                    <label htmlFor="firstName" class="block mb-4 text-lg">
+                      First Name
+                      <input
+                        class="mt-1 block w-full rounded-lg px-4 py-2 text-black"
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                      />
+                    </label>
+                    <label htmlFor="lastName" class="block mb-4 text-lg">
+                      Last Name
+                      <input
+                        class="mt-1 block w-full rounded-lg px-4 py-2 text-black"
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                      />
+                    </label>
+                    <label htmlFor="phoneNumber" class="block mb-4 text-lg">
+                      Phone Number
+                      <input
+                        class="mt-1 block w-full rounded-lg px-4 py-2 text-black"
+                        type="text"
+                        name="phone"
+                        id="phone"
+                      />
+                    </label>
+                    <label htmlFor="Email" class="block mb-8 text-lg">
+                      Email Address
+                      <input
+                        class="mt-1 block w-full rounded-lg px-4 py-2 text-black"
+                        type="text"
+                        name="email"
+                        id="email"
+                      />
+                    </label>
+                    <input
+                      class="bg-transparent text-xl w-full border-2 border-white text-white px-4 py-2 rounded-lg hover:bg-white hover:text-rose-800"
+                      type="button"
+                      onclick="submitInformation()"
+                      value="Make Reservation"
+                    />
+                  </form>
+                </div>
+              </div>
+              <div
+                class="col-start-0 col-span-1 md:col-start-2 md:col-span-3 lg:col-start-3 lg:col-span-4"
+                id="reservationInformation"
+              >
+                <div
+                  class="bg-white text-black p-4 text-center rounded-lg py-8"
+                >
+                  <p class="text-3xl md:text-5xl main text-green-600 mb-4">
+                    Congratulations!
+                  </p>
+                  <p class="text-2xl">Reservation Number:</p>
+                  <p class="text-9xl main" id="reservationNumber"></p>
+                  <p class="text-md">
+                    We can't wait to have you over for some finger-licking BBQ
+                  </p>
+                  <hr
+                    class="w-48 h-0.5 mx-auto my-4 bg-black border-0 rounded"
+                  />
+                  <p id="reservationDay" class="text-2xl md:text-3xl md:mb-2"></p>
+                  <p id="reservationDate" class="text-3xl md:text-5xl md:mb-2"></p>
+                  <p id="reservationTime" class="text-3xl md:text-5xl"></p>
+                  <p class="text-md mt-4">
+                    You'll receive a text and email with all necessary
+                    information
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-slate-200 py-12">
+        <div class="container mx-auto">
+          <div class="mx-4 md:mx-0">
+            <p class="text-5xl mb-8 main text-center text-rose-800">
+              Check out what others are saying!
+            </p>
+
+            <div class="grid grid-cols-4 gap-4 mb-8 md:mb-12">
+              <figure
+                class="col-span-4 md:col-span-2 lg:col-span-1 items-center justify-center p-8 text-center bg-white rounded-lg"
+              >
+                <blockquote class="mx-auto mb-4">
+                  <p class="my-4">
+                    Visited here from out of state. Looked up best BBQ places in
+                    the city and found this one on the Food Network. The food
+                    here is amazing. My two guest that I brought here loved it.
+                    The sweet iced tea was great. The fries appetizer was a
+                    great start. Our meals were so delicious, we kept looking at
+                    each other with smiles and signs of approval. Great
+                    Midwestern BBQ. It was a Friday night at 8 pm, and it was
+                    very noisy, but worth the noise!
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                  />
+                  <div class="space-y-0.5">
+                    <div>Fatima</div>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure
+                class="col-span-4 md:col-span-2 lg:col-span-1 items-center justify-center p-8 text-center bg-white rounded-lg"
+              >
+                <blockquote class="mx-auto mb-4">
+                  <p class="my-4">
+                    This place is a barbecue heaven! I stayed in the area for a
+                    business and I had to visit this place three times! It’s
+                    really that good. Their BBQ ribs are out of this world. It
+                    is so tender, every bite is an explosion of flavors —
+                    smokiness, juice of the meat, and the flavors. In my last
+                    visit, since I don’t know if I’ll come back to this place
+                    again, I bought several bottles of ribs and steak rubs and
+                    BBQ sauces to bring the taste back to where I live. I hope I
+                    can comeback to this place.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                  />
+                  <div class="space-y-0.5">
+                    <div>Andrea</div>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure
+                class="col-span-4 md:col-span-2 lg:col-span-1 items-center justify-center p-8 text-center bg-white rounded-lg"
+              >
+                <blockquote class="mx-auto mb-4">
+                  <p class="my-4">
+                    This was off the hook! Probably the best BBQ I have ever
+                    had. The meat was cooked to perfection. Not to much Smoke -
+                    just the right amount and the meat pulled right off the bone
+                    on my Ribs and Chicken. My son’s Brisket was so tender and
+                    flavorful. I had their baked beans that had burnt end’s
+                    mixed in. It had a nice balance between sweet and smokiness.
+                    We started with Chicken Wings - again fall off the bone with
+                    a sweet & spicy sauce.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                  />
+                  <div class="space-y-0.5">
+                    <div>Kenneth</div>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure
+                class="col-span-4 md:col-span-2 lg:col-span-1 items-center justify-center p-8 text-center bg-white rounded-lg"
+              >
+                <blockquote class="mx-auto mb-4">
+                  <p class="my-4">
+                    The burnt ends were exceptional. I've never had burnt ends
+                    without sauce already on them, and these were heavenly. The
+                    ribs stayed on the bone but were somehow perfectly tender.
+                    The potato salad might have been the best I've ever tried.
+                    The salad with brisket, chicken, and turkey was just the
+                    right amount for anyone looking for a taste of BBQ without
+                    the heavy feeling. The regular and spicy BBQ sauces were
+                    delish and I had to quit being a vegan.
+                  </p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                  <img
+                    class="rounded-full w-9 h-9"
+                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                  />
+                  <div class="space-y-0.5">
+                    <div>Edward</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-rose-900 py-8">
+        <div class="container mx-auto text-white">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-0"
+          >
+            <div class="col-span-1">
+              <p class="text-3xl main">Come visit us</p>
+              <p>2200 N. California Ave.</p>
+              <p>Chicago, IL 60647</p>
+            </div>
+            <div class="col-span-1">
+              <p class="text-3xl main">Contact us</p>
+              <p>chezcesar@bbq.com</p>
+              <p>(786) 320-2490</p>
+            </div>
+            <div class="col-span-1">
+              <p class="text-3xl main">Hours</p>
+              <p>Monday - Thursday: 6:00 PM - 10:00 PM</p>
+              <p>Friday - Sunday: 4:00 PM - 12:00 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("warningMessage").style.display = "none";
+      document.getElementById("infoQuestionnaire").style.display = "block";
+      document.getElementById("reservationInformation").style.display = "none";
+
+      let welcomeTags = [
+        '"Best BBQ in all of the Midwest!"',
+        '"Nothing beats Chez César!"',
+        '"Favorite spot in the city!"',
+        '"Always hits the spot!"',
+        '"A life-altering experience!"',
+        '"Best BBQ outside of the South!"',
+        '"Better than Natalie\'s arepas!"',
+        '"Kevin is not invited because he doesn\'t like flan"',
+      ];
+      let message = welcomeTags[Math.round(Math.random() * 7)];
+      let reservationNumber = Math.round(Math.random() * 1000);
+      document.getElementById("welcomeMessage").innerHTML = message;
+      document.getElementById("reservationNumber").innerHTML =
+        reservationNumber;
+    </script>
+    <script>
+      function submitInformation() {
+        var info = {
+          firstName: document.getElementById("firstName").value,
+          lastName: document.getElementById("lastName").value,
+          phone: document.getElementById("phone").value,
+          email: document.getElementById("email").value,
+        };
+
+        const isEmpty = Object.values(info).some((x) => x == null || x == "");
+
+        if (isEmpty) {
+          document.getElementById("warningMessage").style.display = "block";
+          document.getElementById("warningMessage").innerHTML =
+            "Please fill out all fields";
+        } else {
+          const start = new Date(2023, 7, 1);
+          const end = new Date(2030, 0, 1);
+          var reservation = new Date(
+            start.getTime() + Math.random() * (end.getTime() - start.getTime())
+          );
+          var reservationDay = reservation.toLocaleDateString("en-US", {
+            weekday: "long",
+          });
+          var reservationDate = reservation.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+          var reservationTime = reservation.toLocaleDateString("en-US", {
+            hour: "numeric",
+            minute: "numeric",
+          });
+
+          document.getElementById("reservationDay").innerHTML = reservationDay;
+          document.getElementById("reservationDate").innerHTML =
+            reservationDate;
+          document.getElementById("reservationTime").innerHTML = reservationTime
+            .toString()
+            .split(", ")[1];
+          document.getElementById("warningMessage").style.display = "none";
+          document.getElementById("infoQuestionnaire").style.display = "none";
+          document.getElementById("reservationInformation").style.display =
+            "block";
+        }
+      }
+    </script>
+  </body>
+</html>
