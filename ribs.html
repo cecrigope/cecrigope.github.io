@@ -33,21 +33,20 @@
         <div class="container mx-auto text-white">
           <div class="mx-4 md:mx-0">
             <p
-              class="text-6xl md:text-7xl mb-8 main text-center"
+              class="text-6xl md:text-8xl mb-8 main text-center"
               id="welcomeMessage"
             ></p>
             <hr
               class="w-48 h-0.5 mx-auto my-4 bg-white border-0 rounded md:my-10"
             />
+            <p class="text-3xl md:text-5xl main text-center mb-8">
+              Make your reservation today
+            </p>
             <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-8 gap-4">
               <div
                 class="col-start-0 col-span-1 md:col-start-2 md:col-span-3 lg:col-start-4 lg:col-span-2"
                 id="infoQuestionnaire"
               >
-                <p class="text-3xl md:text-5xl main text-center">
-                  Make your reservation
-                </p>
-                <p class="text-8xl md:text-8xl mb-8 main text-center">Today</p>
                 <div className="pt-4">
                   <form>
                     <div
@@ -117,13 +116,79 @@
                   <hr
                     class="w-48 h-0.5 mx-auto my-4 bg-black border-0 rounded"
                   />
-                  <p id="reservationDay" class="text-2xl md:text-3xl md:mb-2"></p>
-                  <p id="reservationDate" class="text-3xl md:text-5xl md:mb-2"></p>
+                  <p
+                    id="reservationDay"
+                    class="text-2xl md:text-3xl md:mb-2"
+                  ></p>
+                  <p
+                    id="reservationDate"
+                    class="text-3xl md:text-5xl md:mb-2"
+                  ></p>
                   <p id="reservationTime" class="text-3xl md:text-5xl"></p>
                   <p class="text-md mt-4">
                     You'll receive a text and email with all necessary
                     information
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-rose-800 py-12">
+        <div class="container mx-auto">
+          <div class="mx-4 md:mx-0">
+            <p class="text-5xl mb-8 main text-center text-white">BBQ Heaven</p>
+            <div class="grid grid-cols-4 gap-4 mb-8 md:mb-12">
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/brisket.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Brisket</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/pulled_pork.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Pulled Pork</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/buffalo_wings.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Buffalo Wings</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/ribs.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Ribs</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/corn.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Corn on the Cob</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/fries.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">French Fries</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/mashed_potato.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Mashed Potatoes</p>
+                </div>
+              </div>
+              <div class="col-span-4 md:col-span-2 lg:col-span-1">
+                <div class="bg-white rounded-lg">
+                  <img src="./img/cornbread.jpg" class="rounded-t-lg" />
+                  <p class="text-black text-3xl text-center py-4 main">Cornbread</p>
                 </div>
               </div>
             </div>
@@ -252,7 +317,7 @@
     </section>
 
     <section>
-      <div class="bg-rose-900 py-8">
+      <div class="bg-rose-800 py-8">
         <div class="container mx-auto text-white">
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4 md:mx-0"
@@ -298,6 +363,7 @@
       document.getElementById("reservationNumber").innerHTML =
         reservationNumber;
     </script>
+
     <script>
       function submitInformation() {
         var info = {
