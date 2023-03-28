@@ -29,7 +29,7 @@
     </section>
 
     <section class="reservation bg-fixed bg-center bg-cover">
-      <div class="py-12">
+      <div class="py-48">
         <div class="container mx-auto text-white">
           <div class="mx-4 md:mx-0">
             <p
@@ -39,9 +39,9 @@
             <hr
               class="w-48 h-0.5 mx-auto my-4 bg-white border-0 rounded md:my-10"
             />
-            <p class="text-3xl md:text-5xl main text-center mb-8">
+            <!-- <p class="text-3xl md:text-5xl main text-center mb-8">
               Make your reservation today
-            </p>
+            </p> -->
             <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-8 gap-4">
               <div
                 class="col-start-0 col-span-1 md:col-start-2 md:col-span-3 lg:col-start-4 lg:col-span-2"
@@ -131,6 +131,13 @@
                   </p>
                 </div>
               </div>
+              <div
+                class="col-start-0 col-span-1 md:col-start-2 md:col-span-3 lg:col-start-3 lg:col-span-4"
+                id="beforeFriday"
+              >
+              <p class="text-3xl md:text-5xl main text-center mb-4">Come back on Friday to make your reservation.</p>
+              <p class="text-2xl md:text-3xl main text-center">We can't wait to serve you the best BBQ you've ever had.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -146,19 +153,25 @@
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/brisket.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">Brisket</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    Brisket
+                  </p>
                 </div>
               </div>
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/pulled_pork.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">Pulled Pork</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    Pulled Pork
+                  </p>
                 </div>
               </div>
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/buffalo_wings.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">Buffalo Wings</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    Buffalo Wings
+                  </p>
                 </div>
               </div>
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
@@ -170,25 +183,33 @@
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/corn.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">Corn on the Cob</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    Corn on the Cob
+                  </p>
                 </div>
               </div>
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/fries.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">French Fries</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    French Fries
+                  </p>
                 </div>
               </div>
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/mashed_potato.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">Mashed Potatoes</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    Mashed Potatoes
+                  </p>
                 </div>
               </div>
               <div class="col-span-4 md:col-span-2 lg:col-span-1">
                 <div class="bg-white rounded-lg">
                   <img src="./img/cornbread.jpg" class="rounded-t-lg" />
-                  <p class="text-black text-3xl text-center py-4 main">Cornbread</p>
+                  <p class="text-black text-3xl text-center py-4 main">
+                    Cornbread
+                  </p>
                 </div>
               </div>
             </div>
@@ -344,8 +365,9 @@
 
     <script>
       document.getElementById("warningMessage").style.display = "none";
-      document.getElementById("infoQuestionnaire").style.display = "block";
+      document.getElementById("infoQuestionnaire").style.display = "none";
       document.getElementById("reservationInformation").style.display = "none";
+      document.getElementById("beforeFriday").style.display = "block";
 
       let welcomeTags = [
         '"Best BBQ in all of the Midwest!"',
