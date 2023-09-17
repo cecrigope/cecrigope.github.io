@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "SF Regular";
+  src: url(../assets/fonts/SanFranciscoRegular.ttf);
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url(../assets/fonts/SanFranciscoMonoMedium.ttf);
+}
+
+* {
+  font-family: "SF Regular";
+}
+
+.page-body {
+  min-height: calc(100vh - 232px);
+}
+
+.font-mono {
+  font-family: "SF Mono";
+}
